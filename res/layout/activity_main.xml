@@ -1,12 +1,22 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainFrame"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="${relativePackage}.${activityClass}" >
 
-    <TextView
+    <fragment
+        android:id="@+id/sider"
+        android:name="me.homework.astromultipane.MainMenuFragment"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_height="match_parent"
+        android:layout_weight="3" />
+    
+    <fragment
+        android:id="@+id/details"
+        android:name="me.homework.astromultipane.WinterFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
 
-</RelativeLayout>
+</LinearLayout>
