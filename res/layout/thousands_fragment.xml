@@ -3,7 +3,7 @@
     android:id="@+id/LinearLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical" >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,7 +14,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:ems="10" >
+            android:ems="10"
+            android:textColor="#fff" >
 
             <requestFocus />
         </EditText>
@@ -24,22 +25,27 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0"
+            android:background="@android:color/transparent"
             android:minHeight="60dp"
-            android:text="sys" />
+            android:text="sys"
+            android:textColor="#fff" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0"
+            android:background="@android:color/transparent"
             android:minHeight="60dp"
-            android:text="run" />
+            android:text="run"
+            android:textColor="#fff" />
     </LinearLayout>
 
     <ListView
         android:id="@+id/listView1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:textColor="#fff" >
     </ListView>
 
 </LinearLayout>
