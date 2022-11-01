@@ -5,16 +5,21 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 
-public class AutumnFragment extends Fragment {
+public class HoroResultViewFragment extends Fragment {
+
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+	}
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-		View v = inflater.inflate(R.layout.fragment_season, container, false);
-		ImageView image = (ImageView) v.findViewById(R.id.season);
-		image.setImageResource(R.drawable.s3);
+		// TODO Auto-generated method stub
+		View v = (View) inflater.inflate(R.layout.horo_fragment_description, container);
 		return v;
 	}
+	
 
 }

@@ -11,12 +11,12 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_weight="3" />
-    
-    <fragment
+
+    <FrameLayout
         android:id="@+id/details"
-        android:name="me.homework.astromultipane.WinterFragment"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1" />
+        android:layout_weight="1" >
+    </FrameLayout>
 
 </LinearLayout>
